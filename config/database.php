@@ -58,7 +58,7 @@ return [
             'password' => $password,
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
+            'prefix' => 'heroku_be136a8fd3986b9',
         ],
 
         'pgsql' => [
