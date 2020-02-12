@@ -51,7 +51,8 @@ class ButtonController extends Controller
     {
         $request->validate([
             'title'=>'required',
-            'link'=>'regex:' . self::REGEX_LINK
+            'link'=>'nullable|regex:' . self::REGEX_LINK
+            
         ]);
 
         $button = new Button([
@@ -97,7 +98,7 @@ class ButtonController extends Controller
     {
         $request->validate([
             'title'=>'required',
-            'link'=>'regex:' . self::REGEX_LINK
+            'link'=>'nullable|regex:' . self::REGEX_LINK
         ]);
 
         $button = Button::find($id);

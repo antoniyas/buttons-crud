@@ -1,4 +1,5 @@
 .btn-custom {
+    background-color: #555;
     color: #fff;
     width: 100%;
     margin: 20px 0;
@@ -12,4 +13,9 @@
 
 .navbar-brand, .nav-link, #navbarDropdown {
     color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    padding: .95rem .95rem;
 }
