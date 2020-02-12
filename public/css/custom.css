@@ -1,0 +1,14 @@
+.btn-custom {
+    color: #fff;
+    width: 100%;
+    margin: 20px;
+}
+
+.navbar-custom {
+    background-color: #2b82d8;
+    color: #fff;
+}
+
+.navbar-brand, .nav-link, #navbarDropdown {
+    color: #fff;
+}
