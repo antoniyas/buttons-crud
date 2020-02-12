@@ -21,13 +21,14 @@ class HomeController extends Controller
     /**
      * Get link of a button by id.
      *
-     * @return string
+     * @return array
      */
     public function getBtnHref(Request $r)
     {
         $data = array();
         $button_id = $r->id;
         $button = Button::find($button_id);
+
         if ($button->link) {
             $data['href'] = $button->link;
             $data['error'] = null;
@@ -35,6 +36,7 @@ class HomeController extends Controller
             $data['href'] = null;
             $data['error'] = "Button has no link set. Please update button link <a href=".route('buttons.edit', $button_id).">here </a> .";
         }
+        
         return $data;
     }
 }

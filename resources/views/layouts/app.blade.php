@@ -22,7 +22,7 @@
 
     <!-- Colorpicker -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
-    
+
 </head>
 <body>
     <div id="app">
@@ -31,8 +31,11 @@
                 <a class="navbar-brand logo" href="{{ url('/') }}">
                     {{ config('app.name', 'ButtonsApp') }}
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                
+                <!-- Collapse button -->
+                <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

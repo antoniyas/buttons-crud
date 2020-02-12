@@ -8,15 +8,15 @@
             {{ session()->get('success') }}  
         </div>
     @endif
-    <h1 class="display-3">Buttons list</h1>    
+    <h1 class="display-3">{{ __('Buttons list') }}</h1>    
   <table class="table table-striped">
     <thead>
         <tr>
-          <td>ID</td>
-          <td>Title</td>
-          <td>Link</td>
-          <td>Color</td>
-          <td colspan = 2>Actions</td>
+          <td>{{ __('ID') }}</td>
+          <td>{{ __('Title') }}</td>
+          <td>{{ __('Link') }}</td>
+          <td>{{ __('Color') }}</td>
+          <td colspan = 2>{{ __('Actions') }}</td>
         </tr>
     </thead>
     <tbody>
@@ -27,13 +27,13 @@
             <td>{{$button->link}}</td>
             <td>{{$button->color}}</td>
             <td>
-                <a href="{{ route('buttons.edit',$button->id)}}" class="btn btn-primary">Edit</a>
+                <a href="{{ route('buttons.edit',$button->id)}}" class="btn btn-primary">{{ __('Edit') }}</a>
             </td>
             <td>
                 <form action="{{ route('buttons.destroy', $button->id)}}" method="post">
                   @csrf
                   @method('DELETE')
-                  <button class="btn btn-danger" type="submit">Delete</button>
+                  <button class="btn btn-danger" type="submit">{{ __('Delete') }}</button>
                 </form>
             </td>
         </tr>
