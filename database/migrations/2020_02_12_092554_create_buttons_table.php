@@ -24,49 +24,49 @@ class CreateButtonsTable extends Migration
         // Insert some stuff
         DB::table('buttons')->insert(
             array([
-                'title' => 'button 1',
-                'link' => 'http://google.com',
+                'title' => 'Google',
+                'link' => 'https://google.com',
                 'color' => '#75a50f'                
             ],
             [
-                'title' => 'button 2',
-                'link' => 'http://google.com',
+                'title' => 'Facebook',
+                'link' => 'https://facebook.com',
                 'color' => '#938bf3'                
             ],
             [
-                'title' => 'name@domain.com',
-                'link' => 'true',
-                'color' => '#7eb2f7'                
+                'title' => 'Not set',
+                'link' => '',
+                'color' => '#e3661b'                
             ],
             [
-                'title' => 'button 1',
-                'link' => 'http://google.com',
-                'color' => '#75a50f'                
+                'title' => 'Linkedin',
+                'link' => 'https://linkedin.com',
+                'color' => '#5b0f2e'                
             ],
             [
-                'title' => 'button 2',
-                'link' => 'http://google.com',
-                'color' => '#938bf3'                
+                'title' => 'Not set',
+                'link' => '',
+                'color' => '#e3661b'                
             ],
             [
-                'title' => 'name@domain.com',
-                'link' => 'true',
-                'color' => '#7eb2f7'                
+                'title' => 'Not set',
+                'link' => '',
+                'color' => '#e3661b'                
             ],
             [
-                'title' => 'button 1',
-                'link' => 'http://google.com',
-                'color' => '#75a50f'                
+                'title' => 'Twitter',
+                'link' => 'https://twitter.com',
+                'color' => '#ecaeb6'                
             ],
             [
-                'title' => 'button 2',
-                'link' => 'http://google.com',
-                'color' => '#938bf3'                
+                'title' => 'Instagram',
+                'link' => 'https://instagram.com',
+                'color' => '#edc015'                
             ],
             [
-                'title' => 'name@domain.com',
-                'link' => 'true',
-                'color' => '#7eb2f7'                
+                'title' => 'Not set',
+                'link' => '#94914e',
+                'color' => '#e3661b'                
             ],
             )
         );
