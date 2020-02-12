@@ -16,3 +16,5 @@ Route::get('/dashboard', 'HomeController@index');
 Route::resource('buttons', 'ButtonController');
 Auth::routes();
 
+Route::post('/buttons/getHref', 'ButtonController@getHref')->name('getHref');
+

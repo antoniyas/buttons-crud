@@ -7,12 +7,12 @@
   <div>
     @if ($errors->any())
       <div class="alert alert-danger">
-        <ul>
+        <ul style="list-style: none;">
             @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
             @endforeach
         </ul>
-      </div><br />
+      </div>
     @endif
       <form method="post" action="{{ route('buttons.store') }}">
           @csrf
@@ -28,7 +28,7 @@
 
           <div class="form-group">
               <label for="color">Color:</label>
-              <input type="text" class="form-control colorpicker" name="color"/>
+              <input type="text" class="form-control" name="color"/>
           </div>            
           <button type="submit" class="btn btn-primary-outline">Add button</button>
       </form>
@@ -39,6 +39,8 @@
 
 @section('javascript')
     <script>
+      $(document).ready(function(){
         $('.colorpicker').ColorPicker();
+      });
     </script>
 @stop

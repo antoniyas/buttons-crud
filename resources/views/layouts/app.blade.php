@@ -64,7 +64,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('buttons.index') }}">
+                                    <a class="dropdown-item" href="{{ route('buttons.create') }}">
                                         {{ __('Add Button') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('buttons.index') }}">
