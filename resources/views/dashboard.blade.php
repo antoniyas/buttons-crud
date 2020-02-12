@@ -21,7 +21,7 @@
         function setBtnHref(id) {
             $.ajax({
                 type: 'POST',
-                url: "{{ route('getHref') }}",
+                url: "{{ route('getBtnHref') }}",
                 data: {
                     _token: '<?php echo csrf_token() ?>',
                     id: id
