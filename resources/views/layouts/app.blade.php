@@ -20,13 +20,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css" />
 
-    <!-- JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
-
     <!-- Colorpicker -->
-    <link rel="stylesheet" media="screen" type="text/css" href="{{ asset('css/colorpicker.css') }}" />
-    <script type="text/javascript" src="{{ asset('js/colorpicker.js') }}"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <div id="app">
